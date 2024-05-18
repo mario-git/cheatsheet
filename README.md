@@ -10,8 +10,11 @@ Change local trunk branch to main:
 
 ```
 git branch -m master main
-=======
-Upgrade Fedora to the next release: 
+```
+
+# Fedora
+
+Upgrade to the next release:
 
 ```
 # ensure packages are up to date
@@ -20,6 +23,16 @@ sudo dnf upgrade --refresh
 # ensure update plugin is installed
 sudo dnf install dnf-plugin-system-upgrade
 
-# upgrade!
+# download the upgrade
 sudo dnf system-upgrade download --releasever=$VERSION
+
+# finally, go for it!
+sudo dnf system-upgrade reboot
+```
+# MacOS
+
+Finder to show all files
+
+```
+defaults write com.apple.Finder AppleShowAllFiles true
 ```
