@@ -6,20 +6,6 @@
 find . -type f -name "*.yaml" -exec sed -i 's/AAA/BBB/g' {} +
 ```
 
-# Git
-
-Create a remote repo on a local file system:
-
-```
-git init --bare $REPONAME.git
-```
-
-Change local trunk branch to main:
-
-```
-git branch -m master main
-```
-
 # Fedora
 
 Upgrade to the next release:
@@ -37,6 +23,21 @@ sudo dnf system-upgrade download --releasever=$VERSION
 # finally, go for it!
 sudo dnf system-upgrade reboot
 ```
+
+# Git
+
+Create a remote repo on a local file system:
+
+```
+git init --bare $REPONAME.git
+```
+
+Change local trunk branch to main:
+
+```
+git branch -m master main
+```
+
 # MacOS
 
 Finder to show all files
