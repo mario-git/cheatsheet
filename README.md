@@ -1,3 +1,11 @@
+# Bash
+
+`sed` in specific files, e.g. AAA for BBB in yaml files:
+
+```
+find . -type f -name "*.yaml" -exec sed -i 's/AAA/BBB/g' {} +
+```
+
 # Git
 
 Create a remote repo on a local file system:
